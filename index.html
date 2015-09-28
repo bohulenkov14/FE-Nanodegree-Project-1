@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -38,66 +40,230 @@
         </div>
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-4 work-card-canvas">
-            <div class="work-card">
+            <div class="work-card" data-toggle="modal" data-target="#workCard1Modal">
               <img class="img-responsive work-picture" src="http://placekitten.com/g/500/300">
               <h3 class="text-center text-uppercase">Work1</h3>
               <p class="text-center">http://github.com/bohulenkov14/Work1</p>
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4 work-card-canvas">
-            <div class="work-card">
+            <div class="work-card" data-toggle="modal" data-target="#workCard2Modal">
               <img class="img-responsive work-picture" src="http://placekitten.com/g/500/300">
               <h3 class="text-center text-uppercase">Work2</h3>
               <p class="text-center">http://github.com/bohulenkov14/Work2</p>
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4 work-card-canvas">
-            <div class="work-card">
+            <div class="work-card" data-toggle="modal" data-target="#workCard3Modal">
               <img class="img-responsive work-picture" src="http://placekitten.com/g/500/300">
               <h3 class="text-center text-uppercase">Work3</h3>
               <p class="text-center">http://github.com/bohulenkov14/Work3</p>
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4 work-card-canvas">
-            <div class="work-card">
+            <div class="work-card" data-toggle="modal" data-target="#workCard4Modal">
               <img class="img-responsive work-picture" src="http://placekitten.com/g/500/300">
               <h3 class="text-center text-uppercase">Work4</h3>
               <p class="text-center">http://github.com/bohulenkov14/Work4</p>
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4 work-card-canvas">
-            <div class="work-card">
+            <div class="work-card" data-toggle="modal" data-target="#workCard5Modal">
               <img class="img-responsive work-picture" src="http://placekitten.com/g/500/300">
               <h3 class="text-center text-uppercase">Work5</h3>
               <p class="text-center">http://github.com/bohulenkov14/Work5</p>
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4 work-card-canvas">
-            <div class="work-card">
+            <div class="work-card" data-toggle="modal" data-target="#workCard6Modal">
               <img class="img-responsive work-picture" src="http://placekitten.com/g/500/300">
               <h3 class="text-center text-uppercase">Work6</h3>
               <p class="text-center">http://github.com/bohulenkov14/Work6</p>
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4 work-card-canvas">
-            <div class="work-card">
+            <div class="work-card" data-toggle="modal" data-target="#workCard7Modal">
               <img class="img-responsive work-picture" src="http://placekitten.com/g/500/300">
               <h3 class="text-center text-uppercase">Work7</h3>
               <p class="text-center">http://github.com/bohulenkov14/Work7</p>
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4 work-card-canvas">
-            <div class="work-card">
+            <div class="work-card" data-toggle="modal" data-target="#workCard8Modal">
               <img class="img-responsive work-picture" src="http://placekitten.com/g/500/300">
               <h3 class="text-center text-uppercase">Work8</h3>
               <p class="text-center">http://github.com/bohulenkov14/Work8</p>
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4 work-card-canvas">
-            <div class="work-card">
+            <div class="work-card" data-toggle="modal" data-target="#workCard9Modal">
               <img class="img-responsive work-picture" src="http://placekitten.com/g/500/300">
               <h3 class="text-center text-uppercase">Work9</h3>
               <p class="text-center">http://github.com/bohulenkov14/Work9</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="workCard1Modal" tabindex="-1" role="dialog" aria-labelledby="workCard1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 id="workCard1ModalLabel" class="modal-title text-center text-uppercase">Work1</h3>
+            </div>
+            <div class="modal-body">
+              <img class="img-responsive work-picture-modal" src="http://placekitten.com/g/500/300">
+              <p class="text-center">Description</p>
+              <p class="text-center">http://github.com/bohulenkov14/Work1</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="workCard2Modal" tabindex="-1" role="dialog" aria-labelledby="workCard2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 id="workCard2ModalLabel" class="modal-title text-center text-uppercase">Work2</h3>
+            </div>
+            <div class="modal-body">
+              <img class="img-responsive work-picture-modal" src="http://placekitten.com/g/500/300">
+              <p class="text-center">Description</p>
+              <p class="text-center">http://github.com/bohulenkov14/Work2</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="workCard3Modal" tabindex="-1" role="dialog" aria-labelledby="workCard3ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 id="workCard3ModalLabel" class="modal-title text-center text-uppercase">Work3</h3>
+            </div>
+            <div class="modal-body">
+              <img class="img-responsive work-picture-modal" src="http://placekitten.com/g/500/300">
+              <p class="text-center">Description</p>
+              <p class="text-center">http://github.com/bohulenkov14/Work3</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="workCard4Modal" tabindex="-1" role="dialog" aria-labelledby="workCard4ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 id="workCard4ModalLabel" class="modal-title text-center text-uppercase">Work4</h3>
+            </div>
+            <div class="modal-body">
+              <img class="img-responsive work-picture-modal" src="http://placekitten.com/g/500/300">
+              <p class="text-center">Description</p>
+              <p class="text-center">http://github.com/bohulenkov14/Work4</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="workCard5Modal" tabindex="-1" role="dialog" aria-labelledby="workCard5ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 id="workCard5ModalLabel" class="modal-title text-center text-uppercase">Work5</h3>
+            </div>
+            <div class="modal-body">
+              <img class="img-responsive work-picture-modal" src="http://placekitten.com/g/500/300">
+              <p class="text-center">Description</p>
+              <p class="text-center">http://github.com/bohulenkov14/Work5</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="workCard6Modal" tabindex="-1" role="dialog" aria-labelledby="workCard6ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 id="workCard6ModalLabel" class="modal-title text-center text-uppercase">Work6</h3>
+            </div>
+            <div class="modal-body">
+              <img class="img-responsive work-picture-modal" src="http://placekitten.com/g/500/300">
+              <p class="text-center">Description</p>
+              <p class="text-center">http://github.com/bohulenkov14/Work6</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="workCard7Modal" tabindex="-1" role="dialog" aria-labelledby="workCard7ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 id="workCard7ModalLabel" class="modal-title text-center text-uppercase">Work7</h3>
+            </div>
+            <div class="modal-body">
+              <img class="img-responsive work-picture-modal" src="http://placekitten.com/g/500/300">
+              <p class="text-center">Description</p>
+              <p class="text-center">http://github.com/bohulenkov14/Work7</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="workCard8Modal" tabindex="-1" role="dialog" aria-labelledby="workCard8ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 id="workCard8ModalLabel" class="modal-title text-center text-uppercase">Work8</h3>
+            </div>
+            <div class="modal-body">
+              <img class="img-responsive work-picture-modal" src="http://placekitten.com/g/500/300">
+              <p class="text-center">Description</p>
+              <p class="text-center">http://github.com/bohulenkov14/Work8</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="workCard9Modal" tabindex="-1" role="dialog" aria-labelledby="workCard9ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 id="workCard9ModalLabel" class="modal-title text-center text-uppercase">Work9</h3>
+            </div>
+            <div class="modal-body">
+              <img class="img-responsive work-picture-modal" src="http://placekitten.com/g/500/300">
+              <p class="text-center">Description</p>
+              <p class="text-center">http://github.com/bohulenkov14/Work9</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
           </div>
         </div>

@@ -39,6 +39,17 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+.work-picture-modal {
+  max-width: 100%;
+  max-height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+
 .header-linebreak {
   height: 3px;
   border:none;
