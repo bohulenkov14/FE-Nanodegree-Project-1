@@ -70,3 +70,8 @@ body {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
+.caption-link {
+  font-size: 11px;
+  color: #BCBBBB;
+}
