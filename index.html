@@ -6,14 +6,37 @@
 
 
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,100,400' rel='stylesheet' type='text/css'>
     <style>
       /*debug styles*/
       /** { border: 1px solid red !important; }*/
 
       /*future custom styles*/
+      body {
+        font-family: 'Lato', sans-serif;
+        color: #747704;
+        font-weight: 300;
+      }
+      
+      .text-muted {
+        color: #BCBBBB;
+      }
+      
+      .title-super {
+        font-size: 50px;
+      }
+      .subtitle-super {
+        font-size: 18px;
+      }
+      
+      .text-thin {
+        font-weight: 100;
+      }
       .logo {
-        max-width: 150px;
-        max-height: 150px;
+        max-width: 100px;
+        max-height: 100px;
+        margin-top: 20px;
+        margin-bottom: 20px;
       }
       .featured-picture {
         max-width: 100%;
@@ -27,6 +50,12 @@
         margin-left: auto;
         margin-right: auto;
       }
+      .header-linebreak {
+        height: 3px;
+        border:none;
+        background-color: #BCBBBB;
+      }
+      
 
       .work-card {
         box-shadow: 10px 10px 50px #888888;
@@ -44,8 +73,8 @@
             <img class="img-responsive logo" src="http://placekitten.com/g/500/500">
           </div>
           <div class="col-xs-12 col-sm-6">
-            <h1 class="text-right text-uppercase">Jane Doette</h1>
-            <h4 class="text-right text-uppercase">Front-End Ninja</h4>
+            <h1 class="text-right text-uppercase text-thin title-super">Jane Doette</h1>
+            <h4 class="text-right text-uppercase subtitle-super">Front-End Ninja</h4>
           </div>
         </div>
         <div class="row">
@@ -60,7 +89,7 @@
         </div>
         <div class="row">
           <div class="col-md-12">
-            <h2>Featured Work</h2>
+            <h2 class="text-muted">Featured Work</h2>
           </div>
         </div>
         <div class="row">
