@@ -26,6 +26,10 @@ body {
   max-height: 100px;
   margin-top: 20px;
   margin-bottom: 20px;
+  border: 5px solid orange;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
 }
 .featured-picture {
   max-width: 100%;
@@ -35,7 +39,7 @@ body {
 }
 .work-picture {
   max-width: 100%;
-  max-height: auto;
+  max-height: 400px;
   margin-left: auto;
   margin-right: auto;
 }
