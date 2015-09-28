@@ -1,0 +1,57 @@
+/*debug styles*/
+/** { border: 1px solid red !important; }*/
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #747704;
+  font-weight: 300;
+}
+
+.text-muted {
+  color: #BCBBBB;
+}
+
+.title-super {
+  font-size: 50px;
+}
+.subtitle-super {
+  font-size: 18px;
+}
+
+.text-thin {
+  font-weight: 100;
+}
+.logo {
+  max-width: 100px;
+  max-height: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.featured-picture {
+  max-width: 100%;
+  max-height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.work-picture {
+  max-width: 100%;
+  max-height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-linebreak {
+  height: 3px;
+  border:none;
+  background-color: #BCBBBB;
+}
+
+.work-card {
+  box-shadow: 10px 10px 50px #888888;
+  margin: 2%;
+  padding: 2%;
+}
+
+.work-card-canvas {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
