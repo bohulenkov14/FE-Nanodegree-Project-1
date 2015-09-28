@@ -13,7 +13,7 @@
     "@brand-danger": "#d9534f",
     "@body-bg": "#fff",
     "@text-color": "@gray-dark",
-    "@link-color": "@brand-primary",
+    "@link-color": "#BCBBBB",
     "@link-hover-color": "darken(@link-color, 15%)",
     "@link-hover-decoration": "underline",
     "@font-family-sans-serif": "\"Helvetica Neue\", Helvetica, Arial, sans-serif",
@@ -388,5 +388,5 @@
   "js": [
     "modal.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=4d6be5a47b42025d1bfb"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=e3ae42ab507fa19c8275"
 }
