@@ -51,6 +51,10 @@ body {
   padding: 2%;
 }
 
+.work-card:hover {
+  box-shadow: 5px 5px 10px #888888;
+}
+
 .work-card-canvas {
   padding-top: 15px;
   padding-bottom: 15px;
