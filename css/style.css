@@ -1,6 +1,8 @@
 /*debug styles*/
 /** { border: 1px solid red !important; }*/
 
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
 body {
   font-family: 'Lato', sans-serif;
   color: #747704;
@@ -92,4 +94,15 @@ a {
     color: @link-hover-color;
     text-decoration: underline;
   }
+}
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+  font-size: 50px;
+}
+
+.social-networks-wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
 }
