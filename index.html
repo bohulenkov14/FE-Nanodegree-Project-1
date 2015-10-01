@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,100,400' rel='stylesheet'>
+
+    <title>Artem Bohulenkov's portfolio page</title>
+
+  </head>
+  <body>
+      <div class="container">
+        <section>
+          <header>
+            <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                <img class="img-responsive logo" src="image_sources/clock1.svg" alt="Site Logo">
+              </div>
+
+              <div class="col-xs-12 col-sm-6">
+                <h1 class="text-right text-uppercase title-super text-thin text-shadowed-thin">
+                  Artem Bohulenkov
+                </h1>
+
+                <h4 class="text-right text-uppercase subtitle-super text-shadowed-bold">
+                  Front-End Developer
+                </h4>
+              </div>
+            </div>
+          </header>
+
+          <div class="row">
+            <div class="col-md-12">
+              <hr class="header-linebreak"/>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="images/featured-1980_2x.png 2x, images/featured-1170_1x.png 1x">
+                <source media="(min-width: 990px)" srcset="images/featured-1920_2x.png 2x, images/featured-960_1x.png 1x">
+                <img class="img-responsive featured-picture" src="images/featured-730_1x.png" srcset="images/featured-1460_2x.png 2x, images/featured-730_1x.png 1x" alt="Picture with some prgramming code">
+              </picture>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="featured-title text-shadowed-bold">
+                Featured Work
+              </h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- First Work Card -->
+            <div class="col-xs-12 col-sm-6 col-md-4 work-card-canvas">
+              <div class="work-card" data-toggle="modal" data-target="#workCard1Modal">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="images/AboutMe-660_2x.png 2x, images/AboutMe-330_1x.png 1x">
+                  <source media="(min-width: 990px)" srcset="images/AboutMe-540_2x.png 2x, images/AboutMe-270_1x.png 1x">
+                  <img class="img-responsive work-picture" src="images/AboutMe-660_1x.png" srcset="images/AboutMe-1320_2x.png 2x, images/AboutMe-660_1x.png 1x" alt="Screenshot of project About Me">
+                </picture>
+
+                <h3 class="text-center text-uppercase">
+                  About Me
+                </h3>
+
+                <p class="text-center caption-link">
+                  http://github.com/bohulenkov14/FE-Nanodegree-Project-0
+                </p>
+              </div>
+            </div>
+
+            <!-- Second Work Card -->
+            <div class="col-xs-12 col-sm-6 col-md-4 work-card-canvas">
+              <div class="work-card" data-toggle="modal" data-target="#workCard2Modal">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="images/PortfolioSite-660_2x.png 2x, images/PortfolioSite-330_1x.png 1x">
+                  <source media="(min-width: 990px)" srcset="images/PortfolioSite-540_2x.png 2x, images/PortfolioSite-270_1x.png 1x">
+                  <img class="img-responsive work-picture" src="images/PortfolioSite-660_1x.png" srcset="images/PortfolioSite-1320_2x.png 2x, images/PortfolioSite-660_1x.png 1x" alt="Screenshot of project Portfolio Site">
+                </picture>
+
+                <h3 class="text-center text-uppercase">
+                  Portfolio Site
+                </h3>
+
+                <p class="text-center caption-link">
+                  http://github.com/bohulenkov14/FE-Nanodegree-Project-1
+                </p>
+              </div>
+            </div>
+
+            <!-- Third Work Card -->
+            <div class="col-xs-12 col-sm-6 col-md-4 work-card-canvas">
+              <div class="work-card" data-toggle="modal" data-target="#workCard3Modal">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="images/ArcadeGame-660_2x.png 2x, images/ArcadeGame-330_1x.png 1x">
+                  <source media="(min-width: 990px)" srcset="images/ArcadeGame-540_2x.png 2x, images/ArcadeGame-270_1x.png 1x">
+                  <img class="img-responsive work-picture" src="images/ArcadeGame-660_1x.png" srcset="images/ArcadeGame-1320_2x.png 2x, images/ArcadeGame-660_1x.png 1x" alt="Screenshot of project Arcade Game">
+                </picture>
+
+                <h3 class="text-center text-uppercase">
+                  Arcade Game
+                </h3>
+
+                <p class="text-center caption-link">
+                  http://github.com/bohulenkov14/FE-Nanodegree-Project-3
+                </p>
+              </div>
+            </div>
+
+            <!-- Fourth Work Card -->
+            <div class="col-xs-12 col-sm-6 col-md-4 work-card-canvas">
+              <div class="work-card" data-toggle="modal" data-target="#workCard4Modal">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="images/NeigborhoodMap-660_2x.png 2x, images/NeigborhoodMap-330_1x.png 1x">
+                  <source media="(min-width: 990px)" srcset="images/NeigborhoodMap-540_2x.png 2x, images/NeigborhoodMap-270_1x.png 1x">
+                  <img class="img-responsive work-picture" src="images/NeigborhoodMap-660_1x.png" srcset="images/NeigborhoodMap-1320_2x.png 2x, images/NeigborhoodMap-660_1x.png 1x" alt="Screenshot of project Neigborhood Map">
+                </picture>
+
+                <h3 class="text-center text-uppercase">
+                  Neighborhood Map
+                </h3>
+
+                <p class="text-center caption-link">
+                  http://github.com/bohulenkov14/FE-Nanodegree-Project-5-1
+                </p>
+              </div>
+            </div>
+
+            <!-- Fifth Work Card -->
+            <div class="col-xs-12 col-sm-6 col-md-4 work-card-canvas">
+              <div class="work-card" data-toggle="modal" data-target="#workCard5Modal">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="images/HealthTrack-660_2x.png 2x, images/HealthTrack-330_1x.png 1x">
+                  <source media="(min-width: 990px)" srcset="images/HealthTrack-540_2x.png 2x, images/HealthTrack-270_1x.png 1x">
+                  <img class="img-responsive work-picture" src="images/HealthTrack-660_1x.png" srcset="images/HealthTrack-1320_2x.png 2x, images/HealthTrack-660_1x.png 1x" alt="Screenshot of project Health Track">
+                </picture>
+
+                <h3 class="text-center text-uppercase">
+                  Health Tracker
+                </h3>
+
+                <p class="text-center caption-link">
+                  http://github.com/bohulenkov14/FE-Nanodegree-Project-5-2
+                </p>
+              </div>
+            </div>
+
+            <!-- Sixth Work Card -->
+            <div class="col-xs-12 col-sm-6 col-md-4 work-card-canvas">
+              <div class="work-card" data-toggle="modal" data-target="#workCard6Modal">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="images/Clustering-660_2x.png 2x, images/Clustering-330_1x.png 1x">
+                  <source media="(min-width: 990px)" srcset="images/Clustering-540_2x.png 2x, images/Clustering-270_1x.png 1x">
+                  <img class="img-responsive work-picture" src="images/Clustering-660_1x.png" srcset="images/Clustering-1320_2x.png 2x, images/Clustering-660_1x.png 1x" alt="Screenshot of project PCA Clustering">
+                </picture>
+
+                <h3 class="text-center text-uppercase">
+                  PCA Clustering
+                </h3>
+
+                <p class="text-center caption-link">
+                  http://github.com/bohulenkov14/PCA_Clustering
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <hr class="header-linebreak"/>
+            </div>
+          </div>
+        </section>
+
+        <!-- Social network links -->
+        <section>
+          <div class="row">
+            <div class="col-xs-12 text-center">
+              <a class="fontawesome-github social-networks-wrapper text-shadowed-bold" href="https://github.com/bohulenkov14"></a>
+              <a class="fontawesome-linkedin social-networks-wrapper text-shadowed-bold" href="https://ru.linkedin.com/in/bohulenkovas"></a>
+              <a class="fontawesome-facebook-sign social-networks-wrapper text-shadowed-bold" href="https://www.facebook.com/artem.bohulenkov"></a>
+              <a class="fontawesome-twitter social-networks-wrapper text-shadowed-bold" href="https://twitter.com/Zellos_DajeDra"></a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+
+      <!-- Modals -->
+      <!-- Modal window for first work card-->
+      <div class="modal fade" id="workCard1Modal" tabindex="-1" role="dialog" aria-labelledby="workCard1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 id="workCard1ModalLabel" class="modal-title text-center text-uppercase">About Me</h3>
+            </div>
+
+            <div class="modal-body">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="images/AboutMe-660_2x.png 2x, images/AboutMe-330_1x.png 1x">
+                <source media="(min-width: 990px)" srcset="images/AboutMe-540_2x.png 2x, images/AboutMe-270_1x.png 1x">
+                <img class="img-responsive work-picture-modal" src="images/AboutMe-660_1x.png" srcset="images/AboutMe-1320_2x.png 2x, images/AboutMe-660_1x.png 1x" alt="Screenshot of project About Me">
+              </picture>
+
+              <p class="text-center">
+                This is a simple page with info about me, that was made during Udacity Front-end Nanodegree program.
+              </p>
+
+              <br/>
+
+              <p class="text-left">
+                Page link:
+                <a href="http://github.com/bohulenkov14/FE-Nanodegree-Project-0">http://github.com/bohulenkov14/FE-Nanodegree-Project-0</a>
+              </p>
+
+              <p class="text-left">
+                Page source:
+                <a href="http://github.com/bohulenkov14/FE-Nanodegree-Project-0">http://github.com/bohulenkov14/FE-Nanodegree-Project-0</a>
+              </p>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal window for first work card-->
+      <div class="modal fade" id="workCard2Modal" tabindex="-1" role="dialog" aria-labelledby="workCard2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 id="workCard2ModalLabel" class="modal-title text-center text-uppercase">Portfolio Site</h3>
+            </div>
+
+            <div class="modal-body">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="images/PortfolioSite-660_2x.png 2x, images/PortfolioSite-330_1x.png 1x">
+                <source media="(min-width: 990px)" srcset="images/PortfolioSite-540_2x.png 2x, images/PortfolioSite-270_1x.png 1x">
+                <img class="img-responsive work-picture-modal" src="images/PortfolioSite-660_1x.png" srcset="images/PortfolioSite-1320_2x.png 2x, images/PortfolioSite-660_1x.png 1x" alt="Screenshot of project Portfolio Site">
+              </picture>
+
+              <p class="text-center">
+                This page shows my ability to develop responsive pages. Project was made during Udacity Front-end Nanodegree program.
+              </p>
+
+              <br/>
+
+              <p class="text-left">
+                Page link:
+                <a href="http://github.com/bohulenkov14/FE-Nanodegree-Project-1">http://github.com/bohulenkov14/FE-Nanodegree-Project-1</a>
+              </p>
+
+              <p class="text-left">
+                Page source:
+                <a href="http://github.com/bohulenkov14/FE-Nanodegree-Project-1">http://github.com/bohulenkov14/FE-Nanodegree-Project-1</a>
+              </p>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal window for second work card-->
+      <div class="modal fade" id="workCard3Modal" tabindex="-1" role="dialog" aria-labelledby="workCard3ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 id="workCard3ModalLabel" class="modal-title text-center text-uppercase">Arcade Game</h3>
+            </div>
+
+            <div class="modal-body">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="images/ArcadeGame-660_2x.png 2x, images/ArcadeGame-330_1x.png 1x">
+                <source media="(min-width: 990px)" srcset="images/ArcadeGame-540_2x.png 2x, images/ArcadeGame-270_1x.png 1x">
+                <img class="img-responsive work-picture-modal" src="images/ArcadeGame-660_1x.png" srcset="images/ArcadeGame-1320_2x.png 2x, images/ArcadeGame-660_1x.png 1x" alt="Screenshot of project Arcade Game">
+              </picture>
+
+              <p class="text-center">
+                This project is a clone of classic arcade game, that was implemented with HTML5 Canvas. This project is not completed yet, and will be implemented as part of Udacity Front-end Nanodegree program.
+              </p>
+
+              <br/>
+
+              <p class="text-left">
+                Page link:
+                <a href="http://github.com/bohulenkov14/FE-Nanodegree-Project-3">http://github.com/bohulenkov14/FE-Nanodegree-Project-3</a>
+              </p>
+
+              <p class="text-left">
+                Page source:
+                <a href="http://github.com/bohulenkov14/FE-Nanodegree-Project-3">http://github.com/bohulenkov14/FE-Nanodegree-Project-3</a>
+              </p>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal window for third work card-->
+      <div class="modal fade" id="workCard4Modal" tabindex="-1" role="dialog" aria-labelledby="workCard4ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 id="workCard4ModalLabel" class="modal-title text-center text-uppercase">Neighborhood Map</h3>
+            </div>
+
+            <div class="modal-body">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="images/NeigborhoodMap-660_2x.png 2x, images/NeigborhoodMap-330_1x.png 1x">
+                <source media="(min-width: 990px)" srcset="images/NeigborhoodMap-540_2x.png 2x, images/NeigborhoodMap-270_1x.png 1x">
+                <img class="img-responsive work-picture-modal" src="images/NeigborhoodMap-660_1x.png" srcset="images/NeigborhoodMap-1320_2x.png 2x, images/NeigborhoodMap-660_1x.png 1x" alt="Screenshot of project Neigborhood Map">
+              </picture>
+
+              <p class="text-center">
+                This is a project featuring a neighborhood map for places you would like to visit. This project is not completed yet, and will be implemented as part of Udacity Front-end Nanodegree program.
+              </p>
+
+              <br/>
+
+              <p class="text-left">
+                Page link:
+                <a href="http://github.com/bohulenkov14/FE-Nanodegree-Project-5-1">http://github.com/bohulenkov14/FE-Nanodegree-Project-5-1</a>
+              </p>
+
+              <p class="text-left">
+                Page source:
+                <a href="http://github.com/bohulenkov14/FE-Nanodegree-Project-5-1">http://github.com/bohulenkov14/FE-Nanodegree-Project-5-1</a>
+              </p>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal window for fifth work card-->
+      <div class="modal fade" id="workCard5Modal" tabindex="-1" role="dialog" aria-labelledby="workCard5ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 id="workCard5ModalLabel" class="modal-title text-center text-uppercase">Health Tracker</h3>
+            </div>
+
+            <div class="modal-body">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="images/HealthTrack-660_2x.png 2x, images/HealthTrack-330_1x.png 1x">
+                <source media="(min-width: 990px)" srcset="images/HealthTrack-540_2x.png 2x, images/HealthTrack-270_1x.png 1x">
+                <img class="img-responsive work-picture-modal" src="images/HealthTrack-660_1x.png" srcset="images/HealthTrack-1320_2x.png 2x, images/HealthTrack-660_1x.png 1x" alt="Screenshot of project Health Track">
+              </picture>
+
+              <p class="text-center">
+                This is a project featuring user's calorie intake and other health-related metrics. This project is not completed yet, and will be implemented as part of Udacity Front-end Nanodegree program.
+              </p>
+
+              <br/>
+
+              <p class="text-left">
+                Page link:
+                <a href="http://github.com/bohulenkov14/FE-Nanodegree-Project-5-2">http://github.com/bohulenkov14/FE-Nanodegree-Project-5-2</a>
+              </p>
+
+              <p class="text-left">
+                Page source:
+                <a href="http://github.com/bohulenkov14/FE-Nanodegree-Project-5-2">http://github.com/bohulenkov14/FE-Nanodegree-Project-5-2</a>
+              </p>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal window for sixth work card-->
+      <div class="modal fade" id="workCard6Modal" tabindex="-1" role="dialog" aria-labelledby="workCard6ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 id="workCard6ModalLabel" class="modal-title text-center text-uppercase">PCA Clustering</h3>
+            </div>
+
+            <div class="modal-body">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="images/Clustering-660_2x.png 2x, images/Clustering-330_1x.png 1x">
+                <source media="(min-width: 990px)" srcset="images/Clustering-540_2x.png 2x, images/Clustering-270_1x.png 1x">
+                <img class="img-responsive work-picture-modal" src="images/Clustering-660_1x.png" srcset="images/Clustering-1320_2x.png 2x, images/Clustering-660_1x.png 1x" alt="Screenshot of project PCA Clustering">
+              </picture>
+
+              <p class="text-center">
+                This project is a part of my student research work on text clustering at the university.
+              </p>
+
+              <br/>
+
+              <p class="text-left">
+                Page link:
+                <a href="http://github.com/bohulenkov14/PCA_Clustering">http://github.com/bohulenkov14/PCA_Clustering</a>
+              </p>
+
+              <p class="text-left">
+                Page source:
+                <a href="http://github.com/bohulenkov14/PCA_Clustering">http://github.com/bohulenkov14/PCA_Clustering</a>
+              </p>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
