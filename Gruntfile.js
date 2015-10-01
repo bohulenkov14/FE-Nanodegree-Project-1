@@ -13,10 +13,70 @@ module.exports = function(grunt) {
       dev: {
         options: {
           engine: 'im',
-          sizes: [{
-            /* Change these */
-            width: 1600,
-            suffix: '_large_2x',
+          sizes: [
+          {
+            width: 1980,
+            suffix: '_2x',
+            quality: 70
+          },
+          {
+            width: 1920,
+            suffix: '_2x',
+            quality: 70
+          },
+          {
+            width: 1460,
+            suffix: '_2x',
+            quality: 70
+          },
+          {
+            width: 1345,
+            suffix: '_2x',
+            quality: 70
+          },
+          {
+            width: 1320,
+            suffix: '_2x',
+            quality: 70
+          },
+          {
+            width: 660,
+            suffix: '_2x',
+            quality: 70
+          },
+          {
+            width: 540,
+            suffix: '_2x',
+            quality: 70
+          },
+          {
+            width: 1170,
+            suffix: '_1x',
+            quality: 30
+          },
+          {
+            width: 960,
+            suffix: '_1x',
+            quality: 30
+          },
+          {
+            width: 730,
+            suffix: '_1x',
+            quality: 30
+          },
+          {
+            width: 660,
+            suffix: '_1x',
+            quality: 30
+          },
+          {
+            width: 330,
+            suffix: '_1x',
+            quality: 30
+          },
+          {
+            width: 270,
+            suffix: '_1x',
             quality: 30
           }]
         },
@@ -28,7 +88,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           src: ['*.{gif,jpg,png}'],
-          cwd: 'images_src/',
+          cwd: 'image_sources/',
           dest: 'images/'
         }]
       }
