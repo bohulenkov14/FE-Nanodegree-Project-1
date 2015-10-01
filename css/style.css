@@ -1,0 +1,147 @@
+/*==================================================================*/
+/*Common*/
+/*==================================================================*/
+/*Default font for document*/
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: "FontAwesome", sans-serif;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #747704;
+  font-weight: 300;
+}
+
+/*Hovering effect for all links*/
+a {
+  color: @link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: @link-hover-color;
+  }
+}
+/*==================================================================*/
+/*Header*/
+/*==================================================================*/
+.title-super {
+  font-size: 50px;
+}
+
+.subtitle-super {
+  font-size: 18px;
+}
+
+.text-thin {
+  font-weight: 100;
+}
+
+/*shadows for bold text*/
+.text-shadowed-bold {
+  text-shadow: 3px 3px 5px #888;
+}
+
+/*shadows for thin text*/
+.text-shadowed-thin {
+  text-shadow: 3px 3px 3px #888;
+}
+
+/*shadows for bold text*/
+.text-shadowed-bold {
+  text-shadow: 3px 3px 5px #888;
+}
+
+/*shadows for thin text*/
+.text-shadowed-thin {
+  text-shadow: 3px 3px 3px #888;
+}
+
+.header-linebreak {
+  height: 3px;
+  border: none;
+  background-color: #BCBBBB;
+}
+
+.logo {
+  max-width: 100px;
+  max-height: 100px;
+  margin: 20px;
+  -webkit-filter: drop-shadow( 3px 3px 3px #888888 );
+  filter: drop-shadow( 3px 3px 3px #888888 );
+}
+/*==================================================================*/
+/*Content*/
+/*==================================================================*/
+
+.featured-title {
+  font-size: 40px;
+  margin-top: 40px;
+}
+
+
+/*style for links in work cards*/
+.caption-link {
+  font-size: 11px;
+  color: #BCBBBB;
+}
+
+
+.featured-picture {
+  max-width: 100%;
+
+  /*centering featured picture on page*/
+  margin: auto;
+
+  /*shadow for picture*/
+  box-shadow: 5px 5px 10px #888;
+}
+
+/*style for picture on work card*/
+.work-picture {
+  max-width: 100%;
+  max-height: 400px;
+  margin: auto;
+}
+
+/*style for picture in modal dialog*/
+.work-picture-modal {
+  max-width: 100%;
+  margin: auto;
+  padding: 3%;
+}
+
+/*this class is for div, that is used
+  for drawing shadow of work-card.
+  This allows to controll offsets between cards
+  with respect to shadows*/
+.work-card-canvas {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/*style for container with photo of work and link to it*/
+.work-card {
+  margin: 2%;
+  padding: 2%;
+  box-shadow: 5px 5px 10px #888;
+  transition: box-shadow 1s;
+}
+
+.work-card:hover {
+  box-shadow: 10px 10px 50px #888;
+  transition: box-shadow 1s;
+}
+
+/*==================================================================*/
+/*Footer*/
+/*==================================================================*/
+
+/*wrapper for incon font entities,
+  that creates offset between them*/
+.social-networks-wrapper {
+  margin: 20px;
+  font-size: 50px;
+}
