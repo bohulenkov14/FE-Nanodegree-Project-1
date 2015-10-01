@@ -1,6 +1,3 @@
-/*debug styles*/
-/** { border: 1px solid red !important; }*/
-
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
 
 body {
@@ -19,7 +16,18 @@ body {
 .subtitle-super {
   font-size: 18px;
 }
-
+.featured-title {
+  font-size: 40px;
+  margin-top: 40px;
+}
+.text-shadowed-bold
+{
+  text-shadow: 3px 3px 5px #888888,
+}
+.text-shadowed-thin
+{
+  text-shadow: 3px 3px 3px #888888
+}
 .text-thin {
   font-weight: 100;
 }
@@ -28,12 +36,15 @@ body {
   max-height: 100px;
   margin-top: 20px;
   margin-bottom: 20px;
+  -webkit-filter: drop-shadow( 3px 3px 3px #888888 );
+  filter: drop-shadow( 3px 3px 3px #888888 );
 }
 .featured-picture {
   max-width: 100%;
   max-height: auto;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 5px 5px 10px #888888;
 }
 .work-picture {
   max-width: 100%;
@@ -59,13 +70,16 @@ body {
 }
 
 .work-card {
-  box-shadow: 10px 10px 50px #888888;
+
   margin: 2%;
   padding: 2%;
+  box-shadow: 5px 5px 10px #888888;
+  transition: box-shadow 1s;
 }
 
 .work-card:hover {
-  box-shadow: 5px 5px 10px #888888;
+  box-shadow: 10px 10px 50px #888888;
+  transition: box-shadow 1s;
 }
 
 .work-card-canvas {
